@@ -51,5 +51,11 @@
 		slidesApp.setSlide(slide - 1);
 	});
 
+	slidesApp._toolbar.elements.change_effect.addEventListener('change', function (e) {
+		$(slidesApp._frame)
+			.removeClass('slides_normal slides_fade slides_shrink')
+			.addClass(e.target.value);
+	});
+
 	global.slidesApp = slidesApp;
 })(this);

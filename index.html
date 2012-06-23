@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
 </head>
 <body>
-	<div class="slides">
+	<div class="slides slides_normal">
 		<section id="slide-1" class="slides__item">Blah!</section>
 		<section id="slide-2" class="slides__item">Blah-blah-blah!</section>
 		<section id="slide-3" class="slides__item">Blah-blah-blah-blah!</section>
@@ -25,6 +25,15 @@
 
 			<input type="text" maxlength="2" value="" name="slide_current" class="input input_tiny" /> /
 			<input type="text" maxlength="2" value="" name="slides_total" class="input input_tiny input_readonly" readonly />
+
+			<label>
+				Effect:
+				<select name="change_effect" class="input">
+					<option value="slides_normal" selected>Normal</option>
+					<option value="slides_fade">Fadeout</option>
+					<option value="slides_shrink">Shrink</option>
+				</select>
+			</label>
 
 			<button type="button" class="button button_fullscreen">&curren;</button>
 		</form>
