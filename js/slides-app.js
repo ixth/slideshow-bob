@@ -45,9 +45,9 @@ SlidesApp.prototype.updateToolbar = function () {
 SlidesApp.prototype.setSlide = function (i) {
 	if (i < 0) {
 		i = this._slides.length + i;
+	} else if (i >= this._slides.length) {
+		i = this._slides.length - 1;
 	}
-
-	if (i >= this._slides.length) return;
 
 	this._current = i;
 	$('.slides__item_active').removeClass('slides__item_active');
