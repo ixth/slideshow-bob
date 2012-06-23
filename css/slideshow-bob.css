@@ -1,0 +1,66 @@
+body, html { width:100%; height:100%; }
+body {
+	overflow:hidden;
+	background:#666;
+	}
+
+/* input modifiers
+   ========================================================================== */
+.input_readonly {
+	border:none;
+	background:transparent;
+	}
+
+.input_tiny {
+	width:2em;
+	}
+
+/* common toolbar
+   ========================================================================== */
+.toolbar {
+	padding:5px 0;
+
+	border-top:1px solid #aaa;
+	background:#ddd;
+	}
+
+/* toolbar_nav
+   ========================================================================== */
+.toolbar_nav {
+	position:fixed;
+	bottom:0;
+
+	width:100%;
+	z-index:1;
+	}
+
+/* toolbar__form
+   ========================================================================== */
+.toolbar__form {
+	}
+	.toolbar_nav [name="slide_current"] {
+		text-align:right;
+		}
+
+/* slides
+   ========================================================================== */
+.slides {
+	position:relative;
+	width:800px; height:600px;
+	margin:auto;
+	transform-origin:center 0;
+	transition:transform .5s;
+	}
+	.slides__item {
+		position:absolute;
+		width:100%; height:100%;
+		padding:10px;
+		background:#fff;
+		opacity:0;
+		box-sizing:border-box;
+		transition:opacity .7s;
+		}
+	.slides__item_active {
+		opacity:1;
+		z-index:1;
+		}

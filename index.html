@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/typo.css" />
+	<link rel="stylesheet" type="text/css" href="css/slideshow-bob.css" />
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+</head>
+<body>
+	<div class="slides">
+		<section id="slide-1" class="slides__item">Blah!</section>
+		<section id="slide-2" class="slides__item">Blah-blah-blah!</section>
+		<section id="slide-3" class="slides__item">Blah-blah-blah-blah!</section>
+		<section id="slide-4" class="slides__item">Blah-blah!</section>
+	</div>
+
+	<nav class="toolbar toolbar_nav">
+		<form action="#" class="toolbar__form">
+			<button type="button" class="button button_first" name="button_first">&laquo;</button>
+			<button type="button" class="button button_prev" name="button_prev">&lsaquo;</button>
+			<button type="button" class="button button_next" name="button_next">&rsaquo;</button>
+			<button type="button" class="button button_last" name="button_last">&raquo;</button>
+
+			<input type="text" maxlength="2" value="" name="slide_current" class="input input_tiny" /> /
+			<input type="text" maxlength="2" value="" name="slides_total" class="input input_tiny input_readonly" readonly />
+
+			<button type="button" class="button button_fullscreen">&curren;</button>
+		</form>
+	</nav>
+
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/slides-app.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
