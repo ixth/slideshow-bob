@@ -23,6 +23,14 @@
 		}
 	});
 
+	$(window).on('mousewheel', function (e) {
+		if (e.wheelDelta < 0) {
+			slidesApp.nextSlide();
+		} else {
+			slidesApp.prevSlide();
+		}
+	});
+
 	$(window).on('click', '.button', function (e) {
 		var button = $(e.target);
 		if (button.hasClass('button_prev')) {
