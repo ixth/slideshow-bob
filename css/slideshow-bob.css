@@ -136,3 +136,36 @@ body {
 		display:block;
 		margin:auto;
 		}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.button {
+	position:relative;
+	display:inline-block;
+
+	padding:0 10px;
+
+	border:1px solid;
+	border-color:#eee #999 #999 #eee;
+	border-radius:3px;
+
+	background-color:#ccc;
+	background-image:linear-gradient(top,rgba(128,128,128,0),rgba(128,128,128,.3));
+
+	font-size:15px;
+	line-height:21px;
+	font-family:'Trebuchet MS', sans-serif;
+	text-align:center;
+
+	z-index:1;
+	}
+.button:not([disabled]):active {
+	position:relative;
+	top:1px;left:1px;
+	border-color:#999 #eee #eee #999;
+	}
+.button[disabled] {
+	color:#666;
+	text-shadow:1px 0 #fff;
+	}
