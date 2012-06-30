@@ -124,10 +124,12 @@ body {
 		z-index:-1;
 		}
 	.text__image_align_left {
-		float:right;
+		float:left;
+		margin-right:1em;
 		}
 	.text__image_align_right {
 		float:right;
+		margin-left:1em;
 		}
 	.text__image_align_center {
 		display:block;
@@ -136,6 +138,17 @@ body {
 	.text__image_valign_center {
 		display:block;
 		margin:auto;
+		}
+	.text__table {
+		border-collapse:collapse;
+		}
+	.text__table th,
+	.text__table td {
+		border:1px solid;
+		padding:0 1ex;
+		}
+	.text__table thead {
+		background:#ccc;
 		}
 
 /* ==========================================================================
