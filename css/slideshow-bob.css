@@ -59,7 +59,7 @@ body {
 	.slides__item {
 		position:absolute;
 		width:100%; height:100%;
-		padding:25px;
+		padding:50px;
 		background:#fff;
 		box-sizing:border-box;
 		z-index:1;
@@ -112,6 +112,7 @@ body {
 .text {
 	overflow:hidden;
 	font-size:2em;
+	text-shadow:0 0 15px rgba(255,255,255,.8);
 	}
 	.text__image_fit {
 		max-width:100%;
