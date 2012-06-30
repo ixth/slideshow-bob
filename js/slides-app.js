@@ -57,9 +57,11 @@ SlidesApp.prototype.setSlide = function (i) {
 };
 
 SlidesApp.prototype.prevSlide = function () {
+	if (this._current === 0) return;
 	this.setSlide(this._current - 1);
 };
 
 SlidesApp.prototype.nextSlide = function () {
+	if (this._current === this._slides.length - 1) return;
 	this.setSlide(this._current + 1);
 };
